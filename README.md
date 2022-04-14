@@ -1,4 +1,4 @@
-# Opdrachtbeschrijving opdracht 2 
+# Opdrachtbeschrijving Model/Repository
 
 ## Inleiding
 
