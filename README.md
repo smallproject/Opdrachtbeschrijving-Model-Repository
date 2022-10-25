@@ -46,15 +46,10 @@ Je hebt de vorige les een begin gemaakt voor de applicatie voor je werkgever Tec
 ### Belangrijk
 - Bij het inleveren van deze opdracht is deze applicatie nog niet functioneel, hier hebben we meer kennis over andere technieken voor nodig.
 - Laat de _application.properties_ overeenkomen met de gegevens van `PgAdmin`
-- Je mag de volgende return fragmenten gebruiken:
-  - `ResponseEntiteit.ok()`
-  - `ResponseEntiteit.created()`
-  - `ResponseEntiteit.noContent()`
-
-Door het gebruik van deze return fragmenten zul je de volgende foutmeldingen tegenkomen:
-- `incompatible types found`
-- `created .... cannot be applied to ()`
-Deze mag je negeren tijdens het maken van deze opdracht.
+- Je mag de volgende ResponseEntiteiten als return waardes gebruiken:
+  - `ResponseEntiteit.ok("television")`
+  - `ResponseEntiteit.created(null).body("television")`
+  - `ResponseEntiteit.noContent().build()`
 
 ## Stappenplan
 _Let op_: het is uitdagender om jouw eigen stappenplan te maken. Mocht je niet zo goed weten waar je moet beginnen, kun je onderstaand stappenplan volgen:
