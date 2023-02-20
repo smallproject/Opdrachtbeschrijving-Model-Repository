@@ -44,19 +44,19 @@ Je hebt de vorige les een begin gemaakt voor de applicatie voor je werkgever Tec
   - alle getters en setters
   
 ### Belangrijk
-- Bij het inleveren van deze opdracht is deze applicatie nog niet functioneel, hier hebben we meer kennis over andere technieken voor nodig.
 - Laat de _application.properties_ overeenkomen met de gegevens van `PgAdmin`
 - Je mag de volgende ResponseEntiteiten als return waardes gebruiken:
   - `ResponseEntiteit.ok("television")`
   - `ResponseEntiteit.created(null).body("television")`
   - `ResponseEntiteit.noContent().build()`
+- Let er op dat je database-password niet hetzelfde password is dat je gebruikt voor je email, facebook of andere applicatie. Aangezien deze applicatie niet gedeployed hoeft te worden, kun je een makkelijk password kiezen als "password" of "banaan".
 
 ## Stappenplan
 _Let op_: het is uitdagender om jouw eigen stappenplan te maken. Mocht je niet zo goed weten waar je moet beginnen, kun je onderstaand stappenplan volgen:
 
-1. Voeg de benodigde dependencies toe aan je _POM.xml_ en laat `Maven` deze instaleren
+1. Voeg de benodigde dependencies toe aan je _POM.xml_ en laat `Maven` deze installeren
 2. Voeg aan de _application.properties_ de benodigde properties toe
-3. Maak een nieuwe database aan in `PgAdmin` (zorg dat de naam overeenkomt met de properties in je _application.properties)
+3. Maak een nieuwe database aan in `PgAdmin` (zorg dat je _application.properties_ overeenkomt met de naam, password en user van de database)
 4. Maak een nieuwe map aan in je project voor `Models`
 5. Maak een nieuwe klasse genaamd `Television`
 6. Voeg de annotatie **@Entity** toe aan de klasse
@@ -65,4 +65,4 @@ _Let op_: het is uitdagender om jouw eigen stappenplan te maken. Mocht je niet z
 9. Voeg alle _getters & setters_ toe aan de klasse
 10. Maak een nieuwe map aan in je project voor `Repositories`
 11. Voeg aan deze map een nieuwe klasse toe genaamd `TelevisionRepository`
-12. Extend de _repository_ met de `JpaRepository` en geef de juiste attributen mee 
+12. Extend de _repository_ met de `JpaRepository` en geef de juiste attributen mee. (het type van het model en het type van het ID)
