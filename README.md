@@ -10,9 +10,9 @@ Je hebt de vorige les een begin gemaakt voor de applicatie voor je werkgever Tec
 
 ## Randvoorwaarden
 
-- Het project bevat, op de juiste plaats in de map-structuur, een map genaamd `Models`;
-- Het project bevat, op de juiste plaats in de map-structuur, een map genaamd `Repositories`;
-- Het project bevat een `Television` in de map `Models`;
+- Het project bevat, op de juiste plaats in de map-structuur, een map genaamd `models`;
+- Het project bevat, op de juiste plaats in de map-structuur, een map genaamd `repositories`;
+- Het project bevat een `Television` in de map `models`;
 - Het project bevat een `TelevisionRepository`;
 - Het project bevat de volgende dependencies: 
   - `Spring Web`
@@ -57,12 +57,12 @@ _Let op_: het is uitdagender om jouw eigen stappenplan te maken. Mocht je niet z
 1. Voeg de benodigde dependencies toe aan je _POM.xml_ en laat `Maven` deze installeren
 2. Voeg aan de _application.properties_ de benodigde properties toe
 3. Maak een nieuwe database aan in `PgAdmin` (zorg dat je _application.properties_ overeenkomt met de naam, password en user van de database)
-4. Maak een nieuwe map aan in je project voor `Models`
+4. Maak een nieuwe map aan in je project voor `models`
 5. Maak een nieuwe klasse genaamd `Television`
 6. Voeg de annotatie **@Entity** toe aan de klasse
 7. Voeg de juiste _attributen_ toe aan de klasse
 8. Voeg de beide _constructors_ toe aan de klasse
 9. Voeg alle _getters & setters_ toe aan de klasse
-10. Maak een nieuwe map aan in je project voor `Repositories`
+10. Maak een nieuwe map aan in je project voor `repositories`
 11. Voeg aan deze map een nieuwe klasse toe genaamd `TelevisionRepository`
 12. Extend de _repository_ met de `JpaRepository` en geef de juiste attributen mee. (het type van het model en het type van het ID)
