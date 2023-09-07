@@ -18,7 +18,7 @@ Je hebt de vorige les een begin gemaakt voor de applicatie voor je werkgever Tec
   - `Spring Web`
   - `Spring Data Jpa`
   - `PostgreSQL Driver`
-- De **Application.properties** bevat de properties uit hoofdstuk 9.2 van de cursus Spring Boot(met aangepaste namen)
+- De **Application.properties** bevat de properties uit hoofdstuk 5.3 van de cursus Spring Boot(met aangepaste namen)
 - De **TelevisionRepository** extends JpaRepository met de juiste parameters
 - De **Television** bevat:
   -de attributen:
@@ -66,3 +66,9 @@ _Let op_: het is uitdagender om jouw eigen stappenplan te maken. Mocht je niet z
 10. Maak een nieuwe map aan in je project voor `repositories`
 11. Voeg aan deze map een nieuwe klasse toe genaamd `TelevisionRepository`
 12. Extend de _repository_ met de `JpaRepository` en geef de juiste attributen mee. (het type van het model en het type van het ID)
+
+## Bonus
+Een television heeft best veel variabelen, maar er zit nog weinig variatie in de types. Het zijn enkel Strings, Boolean of nummers. Probeer andere datatypes te gebruiken zoals:
+- een Datum voor sold (er zijn in Java verschillende opties om een datum te maken)
+- Een enumeratie voor een of meerdere van availableSize, refreshRate, screenType en screenQuality
+- Let op: je mag ook andere types proberen, maar je kunt (nog) geen lijsten of andere soorten collecties gebruiken. Elke variabele wordt een kolom in de databasetabel. In zo'n kolom kan maar 1 waarde staan, niet en hele lijst van waardes.
