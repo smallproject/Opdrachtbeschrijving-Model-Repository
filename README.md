@@ -69,7 +69,7 @@ _Let op_: het is uitdagender om jouw eigen stappenplan te maken. Mocht je niet z
 
 ## Bonus
 Een television heeft best veel variabelen, maar er zit nog weinig variatie in de types. Het zijn enkel Strings, Booleans of nummers. Probeer andere datatypes te gebruiken zoals:
-- een Datum voor sold (verkoopDatum) of originalStock (productieDatum) (er zijn in Java verschillende opties om een datum te maken)
+- een Datum voor sold (verkoopDatum) of originalStock (inkoopDatum) (er zijn in Java verschillende opties om een datum te maken)
 - Een enumeratie voor een of meerdere van availableSize, refreshRate, screenType en screenQuality
 - Zoek zelf op Baeldung, W3, GeeksForGeeks, etc op hoe je zulke datatypes maakt.
 - Let er ook op hoe dit in je database komt te staan, is dit anders dan andere datatypes?
