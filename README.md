@@ -68,7 +68,11 @@ _Let op_: het is uitdagender om jouw eigen stappenplan te maken. Mocht je niet z
 12. Extend de _repository_ met de `JpaRepository` en geef de juiste attributen mee. (het type van het model en het type van het ID)
 
 ## Bonus
-Een television heeft best veel variabelen, maar er zit nog weinig variatie in de types. Het zijn enkel Strings, Boolean of nummers. Probeer andere datatypes te gebruiken zoals:
+Een television heeft best veel variabelen, maar er zit nog weinig variatie in de types. Het zijn enkel Strings, Booleans of nummers. Probeer andere datatypes te gebruiken zoals:
 - een Datum voor sold (er zijn in Java verschillende opties om een datum te maken)
 - Een enumeratie voor een of meerdere van availableSize, refreshRate, screenType en screenQuality
-- Let op: je mag ook andere types proberen, maar je kunt (nog) geen lijsten of andere soorten collecties gebruiken. Elke variabele wordt een kolom in de databasetabel. In zo'n kolom kan maar 1 waarde staan, niet en hele lijst van waardes.
+- Zoek zelf op Baeldung, W3, GeeksForGeeks, etc op hoe je zulke datatypes maakt.
+- Let er ook op hoe dit in je database komt te staan, is dit anders dan andere datatypes?
+- Let er ook op dat je deze datatypes goed in postman invoert. Ook dit kun je op internet vinden, maar kun je ook met de ouderwetse gis-en-mis-methode vinden.
+
+ _Let op: je mag ook andere types proberen, maar je kunt (nog) geen lijsten of andere soorten collecties gebruiken. Elke variabele wordt een kolom in de databasetabel. In zo'n kolom kan maar 1 waarde staan, niet en hele lijst van waardes._
