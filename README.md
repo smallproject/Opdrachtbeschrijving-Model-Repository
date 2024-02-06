@@ -75,4 +75,4 @@ Een television heeft best veel variabelen, maar er zit nog weinig variatie in de
 - Let er ook op hoe dit in je database komt te staan, is dit anders dan andere datatypes?
 - Let er ook op dat je deze datatypes goed in postman invoert. Ook dit kun je op internet vinden, maar kun je ook met de ouderwetse gis-en-mis-methode vinden.
 
- _Let op: je mag ook andere types proberen, maar je kunt (nog) geen lijsten of andere soorten collecties gebruiken. Elke variabele wordt een kolom in de databasetabel. In zo'n kolom kan maar 1 waarde staan, niet en hele lijst van waardes._
+ _Let op: je mag ook andere types proberen, maar je kunt (nog) geen lijsten of andere soorten collecties gebruiken. Elke variabele wordt een kolom in de databasetabel. In zo'n kolom kan maar 1 waarde staan, niet een hele lijst van waardes._
