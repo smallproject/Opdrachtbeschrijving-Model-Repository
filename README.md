@@ -28,7 +28,7 @@ Je hebt de [vorige les](https://github.com/hogeschoolnovi/backend-spring-boot-te
     - String name
     - Double price
     - Double availableSize
-    - Double refreshRate
+    - Int refreshRate
     - String screenType
     - String screenQuality
     - Boolean smartTv
@@ -64,7 +64,7 @@ _Let op_: het is uitdagender om jouw eigen stappenplan te maken. Mocht je niet z
 8. Voeg de beide _constructors_ toe aan de klasse
 9. Voeg alle _getters & setters_ toe aan de klasse
 10. Maak een nieuwe map aan in je project voor `repositories`
-11. Voeg aan deze map een nieuwe klasse toe genaamd `TelevisionRepository`
+11. Voeg aan deze map een nieuwe Interface toe genaamd `TelevisionRepository`
 12. Extend de _repository_ met de `JpaRepository` en geef de juiste attributen mee. (het type van het model en het type van het ID)
 
 ## Bonus
