@@ -1,9 +1,11 @@
 package nl.smallproject.www.techiteasy.controllers;
 
 import nl.smallproject.www.techiteasy.services.TelevisionService;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@RequestMapping("/api/televisions")
 public class TelevisionController {
 
     private final TelevisionService televisionService;
