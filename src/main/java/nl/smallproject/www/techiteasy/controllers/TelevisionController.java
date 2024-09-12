@@ -38,5 +38,11 @@ public class TelevisionController {
 //        return ResponseEntity.ok(updatedTelevision); //shows updated data
     }
 
+    @RequestMapping(value = "{id}", method = RequestMethod.DELETE)
+    public ResponseEntity<Television> deleteTelevision(@PathVariable Long id) {
+        televisionService.deleteTelevision(id);
+        return ResponseEntity.noContent().build();
+    }
+
 
 }

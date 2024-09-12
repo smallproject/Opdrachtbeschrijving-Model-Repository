@@ -35,4 +35,8 @@ public class TelevisionService {
         return televisionsRepository.save(existingTelevision);
     }
 
+    public void deleteTelevision(@PathVariable Long id) {
+        televisionsRepository.deleteById(id);
+    }
+
 }
