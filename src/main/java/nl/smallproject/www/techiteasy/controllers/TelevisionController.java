@@ -2,6 +2,7 @@ package nl.smallproject.www.techiteasy.controllers;
 
 import nl.smallproject.www.techiteasy.models.Television;
 import nl.smallproject.www.techiteasy.services.TelevisionService;
+import org.apache.coyote.Response;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -29,4 +30,13 @@ public class TelevisionController {
         Television savedTelevision = televisionService.saveTelevision(television);
         return ResponseEntity.status(HttpStatus.CREATED).body(savedTelevision);
     }
+
+    @RequestMapping(value ="{id}", method = RequestMethod.PUT)
+    public ResponseEntity<Television> updateTelevision(@PathVariable Long id, @RequestBody Television television) {
+        Television updatedTelevision = televisionService.updateTelevision(id, television);
+        return ResponseEntity.noContent().build(); // shows no data
+//        return ResponseEntity.ok(updatedTelevision); //shows updated data
+    }
+
+
 }

@@ -2,7 +2,10 @@ package nl.smallproject.www.techiteasy.services;
 
 import nl.smallproject.www.techiteasy.models.Television;
 import nl.smallproject.www.techiteasy.repositories.TelevisionsRepository;
+import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.List;
 
@@ -24,6 +27,12 @@ public class TelevisionService {
 
     public Television saveTelevision(Television television) {
         return televisionsRepository.save(television);
+    }
+
+    public Television updateTelevision(@PathVariable Long id, @RequestBody Television television) {
+        Television existingTelevision = televisionsRepository.getReferenceById(id);
+        BeanUtils.copyProperties(television, existingTelevision, "id");
+        return televisionsRepository.save(existingTelevision);
     }
 
 }
