@@ -22,4 +22,8 @@ public class TelevisionService {
         return televisionsRepository.findAll();
     }
 
+    public Television saveTelevision(Television television) {
+        return televisionsRepository.save(television);
+    }
+
 }
